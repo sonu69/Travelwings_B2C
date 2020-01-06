@@ -35,7 +35,7 @@ public class TravellerDetails_Page {
 
 	@FindBy(xpath="//select[@id='countryId']") List <WebElement> nationality;
 
-	@FindBy(xpath="//button[text()='CONTINUE']") List<WebElement> continue_button;
+	@FindBy(xpath="//button[text()='CONTINUE' and @class='bttn-yellow']") WebElement continue_button;
 
 
 	public TravellerDetails_Page(WebDriver driver) {
@@ -91,7 +91,7 @@ public class TravellerDetails_Page {
 			lastname.get(i).sendKeys(last_name);
 
 			
-			String dob1 = "20202000";
+			String dob1 = "03071991";
 			
 			dob.get(i).sendKeys(dob1);
 			
@@ -125,7 +125,7 @@ public class TravellerDetails_Page {
 			String last_name = "Vats";
 			lastname.get(j+m).sendKeys(last_name);
 			
-			String date = "12122015";
+			String date = "05022015";
 			
 			dob.get(j+m).sendKeys(date);
 
@@ -160,7 +160,7 @@ public class TravellerDetails_Page {
 			String last_name = "Vats";
 			lastname.get(k+l).sendKeys(last_name);
 			
-			String date = "12122018";			
+			String date = "17112018";			
 			dob.get(k+l).sendKeys(date);
 
 			String passport_exp = "J892305";
@@ -338,9 +338,9 @@ public class TravellerDetails_Page {
 
 
 
-	public void continue_button() {
-		
-		driver.findElements(By.xpath("//button[text()='CONTINUE']")).get(0).click();
+	public PaymentMethods_Page continue_button() {
+		continue_button.click();
+		return new PaymentMethods_Page(driver);
 		
 	}
 

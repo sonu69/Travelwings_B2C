@@ -12,11 +12,11 @@ public class Itinerary_Page {
 
 	private WebDriver driver;
 	
-	@FindBy(xpath="//button[contains(@class,'bttn-yellow yellow-button')]")  WebElement continue_button;
+	@FindBy(xpath="//button[text()='CONTINUE' and @class='bttn-yellow yellow-button mr-3 ng-scope']")  WebElement continue_button;
 	
 	@FindBy(xpath="//div[@class='user-name']/input") WebElement guest_email;
 	
-	@FindBy(xpath="//button[text()='CONTINUE']") List <WebElement> guest_continue;
+	@FindBy(xpath="//input[@class='bttn-yellow ng-scope']") WebElement guest_continue;
 	
 	@FindBy(xpath="div[@class='user-name']/input") WebElement username;
 	
@@ -44,7 +44,7 @@ public class Itinerary_Page {
 	
 	public TravellerDetails_Page guest_user() {
 		guest_email.sendKeys("sonu.kumar@techtreeit.com");
-		guest_continue.get(0).click();
+		guest_continue.click();
 		return new TravellerDetails_Page(driver);
 	}
 	

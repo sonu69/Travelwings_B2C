@@ -25,8 +25,9 @@ public class PaymentMethods_Page {
 	@FindBy(xpath="//button[contains(text(),'MAKE PAYMENT')]") WebElement make_payment;
 	
 	
-	public PaymentMethods_Page() {
+	public PaymentMethods_Page(WebDriver driver) {
 		PageFactory.initElements(driver, this);
+		this.driver=driver;
 	}
 	
 	
