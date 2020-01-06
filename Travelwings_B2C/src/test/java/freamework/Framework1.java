@@ -38,14 +38,13 @@ public class Framework1 extends Baseclass{
 		sp = new SearchWidget_Page(driver);
 		sp.add_origin();
 		sp.addDepartureDate();
+		sp.addReturnDate();
 		sp.add_destination();
-		sp.addDepartureDate();
 		sp.addTraveller();
 		fr = sp.search_submit();
 		it = fr.flight_select();
 		it.continue_itinerary();
 		tv = it.guest_user();
-		
 		tv.add_pax();
 		pm = tv.continue_button();
 		

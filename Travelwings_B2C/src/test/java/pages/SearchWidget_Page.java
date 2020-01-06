@@ -163,9 +163,9 @@ public class SearchWidget_Page {
 
 
 	public void addTraveller() {
-		int a = 1;
-		int c = 1;
-		int f = 1;
+		int a = 2;
+		int c = 2;
+		int f = 2;
 		
 		driver.findElement(By.xpath("//span[@class='traveler-text']")).click();
 		
