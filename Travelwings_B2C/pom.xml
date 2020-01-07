@@ -84,12 +84,20 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-compiler-plugin</artifactId>
+  <version>3.8.1</version>
+  <type>maven-plugin</type>
+</dependency>
+
 	</dependencies>
 
 	<build>
 		<plugins>
 
-			<plugin>
+<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.5.1</version>
 				<configuration>
@@ -97,6 +105,9 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+
+
+
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

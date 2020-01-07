@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="68028" started-at="2020-01-06T16:29:22Z" finished-at="2020-01-06T16:30:30Z">
+  <suite name="Default suite" duration-ms="58141" started-at="2020-01-07T06:17:10Z" finished-at="2020-01-07T06:18:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="68028" started-at="2020-01-06T16:29:22Z" finished-at="2020-01-06T16:30:30Z">
+    <test name="Default test" duration-ms="58141" started-at="2020-01-07T06:17:10Z" finished-at="2020-01-07T06:18:08Z">
       <class name="freamework.Framework1">
-        <test-method status="PASS" signature="browserfactory()[pri:0, instance:freamework.Framework1@29626d54]" name="browserfactory" is-config="true" duration-ms="22389" started-at="2020-01-06T21:59:22Z" finished-at="2020-01-06T21:59:44Z">
+        <test-method status="PASS" signature="browserfactory()[pri:0, instance:freamework.Framework1@5bd03f44]" name="browserfactory" is-config="true" duration-ms="15037" started-at="2020-01-07T11:47:10Z" finished-at="2020-01-07T11:47:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserfactory -->
-        <test-method status="PASS" signature="tc1()[pri:0, instance:freamework.Framework1@29626d54]" name="tc1" duration-ms="45599" started-at="2020-01-06T21:59:44Z" finished-at="2020-01-06T22:00:30Z">
+        <test-method status="PASS" signature="tc1()[pri:0, instance:freamework.Framework1@5bd03f44]" name="tc1" duration-ms="43089" started-at="2020-01-07T11:47:25Z" finished-at="2020-01-07T11:48:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc1 -->
