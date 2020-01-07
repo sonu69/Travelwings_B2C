@@ -5,8 +5,10 @@
     <classes>
       <class name="freamework.Framework1">
         <methods>
+          <include name="teardown"/>
           <include name="browserfactory"/>
-          <include name="tc1"/>
+          <include name="tc3"/>
+          <include name="tc2"/>
         </methods>
       </class> <!-- freamework.Framework1 -->
     </classes>

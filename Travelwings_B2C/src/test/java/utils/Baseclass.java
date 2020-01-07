@@ -17,18 +17,18 @@ public class Baseclass {
 	public WebDriver getDriver() {
 
 		WebDriverManager.chromedriver().setup();
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless");
-		options.addArguments("window-size=1700x800");
+//		ChromeOptions options = new ChromeOptions();
+//		options.addArguments("--headless");
+//		options.addArguments("window-size=1366x768");
+//		
+//		options.setHeadless(false);
 		
-		//options.setHeadless(false);
-		
-		driver = new ChromeDriver(options);
+		driver = new ChromeDriver();
 		
 		return driver;
 	}
 	
-	
+
 	
 
 	

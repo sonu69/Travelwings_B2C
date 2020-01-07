@@ -1,20 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="58141" started-at="2020-01-07T06:17:10Z" finished-at="2020-01-07T06:18:08Z">
+  <suite name="Default suite" duration-ms="58589" started-at="2020-01-07T21:10:59Z" finished-at="2020-01-07T21:11:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="58141" started-at="2020-01-07T06:17:10Z" finished-at="2020-01-07T06:18:08Z">
+    <test name="Default test" duration-ms="58589" started-at="2020-01-07T21:10:59Z" finished-at="2020-01-07T21:11:57Z">
       <class name="freamework.Framework1">
-        <test-method status="PASS" signature="browserfactory()[pri:0, instance:freamework.Framework1@5bd03f44]" name="browserfactory" is-config="true" duration-ms="15037" started-at="2020-01-07T11:47:10Z" finished-at="2020-01-07T11:47:25Z">
+        <test-method status="PASS" signature="browserfactory()[pri:0, instance:freamework.Framework1@6fd02e5]" name="browserfactory" is-config="true" duration-ms="15253" started-at="2020-01-08T02:40:59Z" finished-at="2020-01-08T02:41:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserfactory -->
-        <test-method status="PASS" signature="tc1()[pri:0, instance:freamework.Framework1@5bd03f44]" name="tc1" duration-ms="43089" started-at="2020-01-07T11:47:25Z" finished-at="2020-01-07T11:48:08Z">
+        <test-method status="PASS" signature="tc1()[pri:0, instance:freamework.Framework1@6fd02e5]" name="tc1" duration-ms="11048" started-at="2020-01-08T02:41:14Z" description="search widget page" finished-at="2020-01-08T02:41:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc1 -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:freamework.Framework1@6fd02e5]" name="teardown" is-config="true" duration-ms="436" started-at="2020-01-08T02:41:25Z" finished-at="2020-01-08T02:41:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc1 status=SUCCESS method=Framework1.tc1()[pri:0, instance:freamework.Framework1@6fd02e5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="tc2()[pri:0, instance:freamework.Framework1@6fd02e5]" name="tc2" duration-ms="187" started-at="2020-01-08T02:41:26Z" description="Flight result page" finished-at="2020-01-08T02:41:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc2 -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:freamework.Framework1@6fd02e5]" name="teardown" is-config="true" duration-ms="93" started-at="2020-01-08T02:41:26Z" finished-at="2020-01-08T02:41:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc2 status=SUCCESS method=Framework1.tc2()[pri:0, instance:freamework.Framework1@6fd02e5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="tc3()[pri:0, instance:freamework.Framework1@6fd02e5]" name="tc3" duration-ms="31470" started-at="2020-01-08T02:41:26Z" description="Itinerary page" finished-at="2020-01-08T02:41:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc3 -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:freamework.Framework1@6fd02e5]" name="teardown" is-config="true" duration-ms="73" started-at="2020-01-08T02:41:57Z" finished-at="2020-01-08T02:41:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc3 status=SUCCESS method=Framework1.tc3()[pri:0, instance:freamework.Framework1@6fd02e5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- freamework.Framework1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
