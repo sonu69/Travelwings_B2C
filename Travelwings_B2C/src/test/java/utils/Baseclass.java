@@ -14,8 +14,8 @@ public class Baseclass {
 	public WebDriver driver;
 	
 	public WebDriver getDriver() {
-		WebDriverManager.chromedriver().setup();
-		 driver = new ChromeDriver();
+		WebDriverManager.firefoxdriver().setup();
+		 driver = new FirefoxDriver();
 		return driver;
 	}
 	
