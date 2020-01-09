@@ -1,24 +1,16 @@
 package freamework;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-
 import pages.FlightResult_Page;
 import pages.Itinerary_Page;
 import pages.PaymentMethods_Page;
@@ -26,6 +18,7 @@ import pages.SearchWidget_Page;
 import pages.TravellerDetails_Page;
 import utils.Baseclass;
 import utils.Helper;
+
 
 public class Framework1 extends Baseclass{
 	private WebDriver driver;

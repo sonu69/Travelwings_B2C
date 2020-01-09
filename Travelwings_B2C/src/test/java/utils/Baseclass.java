@@ -16,14 +16,14 @@ public class Baseclass {
 	
 	public WebDriver getDriver() {
 
-		WebDriverManager.chromedriver().setup();
+		WebDriverManager.firefoxdriver().setup();
 //		ChromeOptions options = new ChromeOptions();
 //		options.addArguments("--headless");
 //		options.addArguments("window-size=1366x768");
 //		
 //		options.setHeadless(false);
 		
-		driver = new ChromeDriver();
+		driver = new FirefoxDriver();
 		
 		return driver;
 	}

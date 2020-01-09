@@ -1,61 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="2" failed="0" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="58589" started-at="2020-01-07T21:10:59Z" finished-at="2020-01-07T21:11:57Z">
+  <suite name="Default suite" duration-ms="32963" started-at="2020-01-09T12:22:20Z" finished-at="2020-01-09T12:22:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="58589" started-at="2020-01-07T21:10:59Z" finished-at="2020-01-07T21:11:57Z">
+    <test name="Default test" duration-ms="32963" started-at="2020-01-09T12:22:20Z" finished-at="2020-01-09T12:22:53Z">
       <class name="freamework.Framework1">
-        <test-method status="PASS" signature="browserfactory()[pri:0, instance:freamework.Framework1@6fd02e5]" name="browserfactory" is-config="true" duration-ms="15253" started-at="2020-01-08T02:40:59Z" finished-at="2020-01-08T02:41:14Z">
+        <test-method status="PASS" signature="browserfactory()[pri:0, instance:freamework.Framework1@1ce92674]" name="browserfactory" is-config="true" duration-ms="15675" started-at="2020-01-09T17:52:20Z" finished-at="2020-01-09T17:52:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserfactory -->
-        <test-method status="PASS" signature="tc1()[pri:0, instance:freamework.Framework1@6fd02e5]" name="tc1" duration-ms="11048" started-at="2020-01-08T02:41:14Z" description="search widget page" finished-at="2020-01-08T02:41:25Z">
+        <test-method status="PASS" signature="tc1()[pri:0, instance:freamework.Framework1@1ce92674]" name="tc1" duration-ms="13185" started-at="2020-01-09T17:52:36Z" description="search widget page" finished-at="2020-01-09T17:52:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc1 -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:freamework.Framework1@6fd02e5]" name="teardown" is-config="true" duration-ms="436" started-at="2020-01-08T02:41:25Z" finished-at="2020-01-08T02:41:26Z">
+        <test-method status="FAIL" signature="teardown(org.testng.ITestResult)[pri:0, instance:freamework.Framework1@1ce92674]" name="teardown" is-config="true" duration-ms="4087" started-at="2020-01-09T17:52:49Z" finished-at="2020-01-09T17:52:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc1 status=SUCCESS method=Framework1.tc1()[pri:0, instance:freamework.Framework1@6fd02e5] output={null}]]]>
+                <![CDATA[[TestResult name=tc1 status=SUCCESS method=Framework1.tc1()[pri:0, instance:freamework.Framework1@1ce92674] output={null}]]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at javax.imageio.ImageIO.write(Unknown Source)
+	at utils.Helper.takescreenshot(Helper.java:33)
+	at freamework.Framework1.teardown(Framework1.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:723)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="tc2()[pri:0, instance:freamework.Framework1@6fd02e5]" name="tc2" duration-ms="187" started-at="2020-01-08T02:41:26Z" description="Flight result page" finished-at="2020-01-08T02:41:26Z">
+        <test-method status="SKIP" signature="tc2()[pri:0, instance:freamework.Framework1@1ce92674]" name="tc2" duration-ms="0" started-at="2020-01-09T17:52:53Z" description="Flight result page" finished-at="2020-01-09T17:52:53Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at javax.imageio.ImageIO.write(Unknown Source)
+	at utils.Helper.takescreenshot(Helper.java:33)
+	at freamework.Framework1.teardown(Framework1.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:723)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc2 -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:freamework.Framework1@6fd02e5]" name="teardown" is-config="true" duration-ms="93" started-at="2020-01-08T02:41:26Z" finished-at="2020-01-08T02:41:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc2 status=SUCCESS method=Framework1.tc2()[pri:0, instance:freamework.Framework1@6fd02e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="tc3()[pri:0, instance:freamework.Framework1@6fd02e5]" name="tc3" duration-ms="31470" started-at="2020-01-08T02:41:26Z" description="Itinerary page" finished-at="2020-01-08T02:41:57Z">
+        <test-method status="SKIP" signature="tc3()[pri:0, instance:freamework.Framework1@1ce92674]" name="tc3" duration-ms="0" started-at="2020-01-09T17:52:53Z" description="Itinerary page" finished-at="2020-01-09T17:52:53Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at javax.imageio.ImageIO.write(Unknown Source)
+	at utils.Helper.takescreenshot(Helper.java:33)
+	at freamework.Framework1.teardown(Framework1.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:723)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc3 -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:freamework.Framework1@6fd02e5]" name="teardown" is-config="true" duration-ms="73" started-at="2020-01-08T02:41:57Z" finished-at="2020-01-08T02:41:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc3 status=SUCCESS method=Framework1.tc3()[pri:0, instance:freamework.Framework1@6fd02e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
       </class> <!-- freamework.Framework1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
