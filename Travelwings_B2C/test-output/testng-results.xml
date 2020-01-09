@@ -2,33 +2,39 @@
 <testng-results skipped="2" failed="0" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32963" started-at="2020-01-09T12:22:20Z" finished-at="2020-01-09T12:22:53Z">
+  <suite name="Suite" duration-ms="29390" started-at="2020-01-09T20:43:41Z" finished-at="2020-01-09T20:44:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32963" started-at="2020-01-09T12:22:20Z" finished-at="2020-01-09T12:22:53Z">
+    <test name="Test" duration-ms="29390" started-at="2020-01-09T20:43:41Z" finished-at="2020-01-09T20:44:10Z">
       <class name="freamework.Framework1">
-        <test-method status="PASS" signature="browserfactory()[pri:0, instance:freamework.Framework1@1ce92674]" name="browserfactory" is-config="true" duration-ms="15675" started-at="2020-01-09T17:52:20Z" finished-at="2020-01-09T17:52:36Z">
+        <test-method status="PASS" signature="browserfactory()[pri:0, instance:freamework.Framework1@6156496]" name="browserfactory" is-config="true" duration-ms="14967" started-at="2020-01-10T02:13:41Z" finished-at="2020-01-10T02:13:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserfactory -->
-        <test-method status="PASS" signature="tc1()[pri:0, instance:freamework.Framework1@1ce92674]" name="tc1" duration-ms="13185" started-at="2020-01-09T17:52:36Z" description="search widget page" finished-at="2020-01-09T17:52:49Z">
+        <test-method status="PASS" signature="tc1()[pri:0, instance:freamework.Framework1@6156496]" name="tc1" duration-ms="13778" started-at="2020-01-10T02:13:56Z" description="search widget page" finished-at="2020-01-10T02:14:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc1 -->
-        <test-method status="FAIL" signature="teardown(org.testng.ITestResult)[pri:0, instance:freamework.Framework1@1ce92674]" name="teardown" is-config="true" duration-ms="4087" started-at="2020-01-09T17:52:49Z" finished-at="2020-01-09T17:52:53Z">
+        <test-method status="FAIL" signature="teardown(org.testng.ITestResult)[pri:0, instance:freamework.Framework1@6156496]" name="teardown" is-config="true" duration-ms="612" started-at="2020-01-10T02:14:10Z" finished-at="2020-01-10T02:14:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc1 status=SUCCESS method=Framework1.tc1()[pri:0, instance:freamework.Framework1@1ce92674] output={null}]]]>
+                <![CDATA[[TestResult name=tc1 status=SUCCESS method=Framework1.tc1()[pri:0, instance:freamework.Framework1@6156496] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[The filename, directory name, or volume label syntax is incorrect]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at javax.imageio.ImageIO.write(Unknown Source)
-	at utils.Helper.takescreenshot(Helper.java:33)
-	at freamework.Framework1.teardown(Framework1.java:82)
+              <![CDATA[java.io.IOException: The filename, directory name, or volume label syntax is incorrect
+	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source)
+	at java.io.File.getCanonicalPath(Unknown Source)
+	at org.codehaus.plexus.util.FileUtils.copyFile(FileUtils.java:1007)
+	at utils.Helper.getScreenshot(Helper.java:31)
+	at freamework.Framework1.teardown(Framework1.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -58,17 +64,23 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.io.IOException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="SKIP" signature="tc2()[pri:0, instance:freamework.Framework1@1ce92674]" name="tc2" duration-ms="0" started-at="2020-01-09T17:52:53Z" description="Flight result page" finished-at="2020-01-09T17:52:53Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="SKIP" signature="tc2()[pri:0, instance:freamework.Framework1@6156496]" name="tc2" duration-ms="0" started-at="2020-01-10T02:14:10Z" description="Flight result page" finished-at="2020-01-10T02:14:10Z">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[The filename, directory name, or volume label syntax is incorrect]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at javax.imageio.ImageIO.write(Unknown Source)
-	at utils.Helper.takescreenshot(Helper.java:33)
-	at freamework.Framework1.teardown(Framework1.java:82)
+              <![CDATA[java.io.IOException: The filename, directory name, or volume label syntax is incorrect
+	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source)
+	at java.io.File.getCanonicalPath(Unknown Source)
+	at org.codehaus.plexus.util.FileUtils.copyFile(FileUtils.java:1007)
+	at utils.Helper.getScreenshot(Helper.java:31)
+	at freamework.Framework1.teardown(Framework1.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -98,17 +110,23 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.io.IOException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc2 -->
-        <test-method status="SKIP" signature="tc3()[pri:0, instance:freamework.Framework1@1ce92674]" name="tc3" duration-ms="0" started-at="2020-01-09T17:52:53Z" description="Itinerary page" finished-at="2020-01-09T17:52:53Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="SKIP" signature="tc3()[pri:0, instance:freamework.Framework1@6156496]" name="tc3" duration-ms="0" started-at="2020-01-10T02:14:10Z" description="Itinerary page" finished-at="2020-01-10T02:14:10Z">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[The filename, directory name, or volume label syntax is incorrect]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at javax.imageio.ImageIO.write(Unknown Source)
-	at utils.Helper.takescreenshot(Helper.java:33)
-	at freamework.Framework1.teardown(Framework1.java:82)
+              <![CDATA[java.io.IOException: The filename, directory name, or volume label syntax is incorrect
+	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source)
+	at java.io.File.getCanonicalPath(Unknown Source)
+	at org.codehaus.plexus.util.FileUtils.copyFile(FileUtils.java:1007)
+	at utils.Helper.getScreenshot(Helper.java:31)
+	at freamework.Framework1.teardown(Framework1.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -138,11 +156,11 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.io.IOException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc3 -->
       </class> <!-- freamework.Framework1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -75,12 +75,16 @@ public class Framework1 extends Baseclass{
 
 	@AfterMethod
 	public void teardown(ITestResult result) throws Exception {
-//		if(result.getStatus()==ITestResult.FAILURE) {
-//			logger.fail("Test fail", MediaEntityBuilder.createScreenCaptureFromPath(Helper.takescreenshot(driver)).build());
-//		}
-//		else if(result.getStatus()==ITestResult.SUCCESS) {
-//			logger.pass("Test pass", MediaEntityBuilder.createScreenCaptureFromPath(Helper.takescreenshot(driver)).build());
-//		}
+		if(result.getStatus()==ITestResult.FAILURE) {
+			String temp = Helper.getScreenshot(driver);
+			logger.fail("Failed", MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
+		}
+		else if(result.getStatus()==ITestResult.SUCCESS) {
+			String temp = Helper.getScreenshot(driver);
+			logger.pass("Pass", MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
+		}
+		
+		
 		extent.flush();
 	}
 

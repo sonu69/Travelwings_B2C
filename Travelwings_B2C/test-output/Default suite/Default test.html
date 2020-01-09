@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/0/2</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 09 17:52:20 IST 2020</td>
+<td>Started on:</td><td>Fri Jan 10 02:11:10 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>32 seconds (32963 ms)</td>
+<tr><td>Total time:</td><td>49 seconds (49844 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,11 +75,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='freamework.Framework1.teardown()'><b>teardown</b><br>Test class: freamework.Framework1<br>Parameters: [TestResult name=tc1 status=SUCCESS method=Framework1.tc1()[pri:0, instance:freamework.Framework1@1ce92674] output={null}]</td>
-<td><div><pre>java.lang.NullPointerException
-	at javax.imageio.ImageIO.write(Unknown Source)
-	at utils.Helper.takescreenshot(Helper.java:33)
-	at freamework.Framework1.teardown(Framework1.java:82)
+<td title='freamework.Framework1.teardown()'><b>teardown</b><br>Test class: freamework.Framework1<br>Parameters: [TestResult name=tc1 status=SUCCESS method=Framework1.tc1()[pri:0, instance:freamework.Framework1@6fd02e5] output={null}]</td>
+<td><div><pre>java.io.IOException: The filename, directory name, or volume label syntax is incorrect
+	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source)
+	at java.io.File.getCanonicalPath(Unknown Source)
+	at org.codehaus.plexus.util.FileUtils.copyFile(FileUtils.java:1007)
+	at utils.Helper.getScreenshot(Helper.java:31)
+	at freamework.Framework1.teardown(Framework1.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -107,11 +110,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace726051009", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace726051009'><pre>java.lang.NullPointerException
-	at javax.imageio.ImageIO.write(Unknown Source)
-	at utils.Helper.takescreenshot(Helper.java:33)
-	at freamework.Framework1.teardown(Framework1.java:82)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2088582214", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2088582214'><pre>java.io.IOException: The filename, directory name, or volume label syntax is incorrect
+	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source)
+	at java.io.File.getCanonicalPath(Unknown Source)
+	at org.codehaus.plexus.util.FileUtils.copyFile(FileUtils.java:1007)
+	at utils.Helper.getScreenshot(Helper.java:31)
+	at freamework.Framework1.teardown(Framework1.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -140,8 +146,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>4</td>
-<td>freamework.Framework1@1ce92674</td></tr>
+<td>0</td>
+<td>freamework.Framework1@6fd02e5</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -153,8 +159,8 @@ function toggleAllBoxes() {
 <tr>
 <td title='freamework.Framework1.tc1()'><b>tc1</b><br>Test class: freamework.Framework1<br>Test method: search widget page</td>
 <td></td>
-<td>13</td>
-<td>freamework.Framework1@1ce92674</td></tr>
+<td>17</td>
+<td>freamework.Framework1@6fd02e5</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -165,10 +171,13 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='freamework.Framework1.tc2()'><b>tc2</b><br>Test class: freamework.Framework1<br>Test method: Flight result page</td>
-<td><div><pre>java.lang.NullPointerException
-	at javax.imageio.ImageIO.write(Unknown Source)
-	at utils.Helper.takescreenshot(Helper.java:33)
-	at freamework.Framework1.teardown(Framework1.java:82)
+<td><div><pre>java.io.IOException: The filename, directory name, or volume label syntax is incorrect
+	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source)
+	at java.io.File.getCanonicalPath(Unknown Source)
+	at org.codehaus.plexus.util.FileUtils.copyFile(FileUtils.java:1007)
+	at utils.Helper.getScreenshot(Helper.java:31)
+	at freamework.Framework1.teardown(Framework1.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -196,11 +205,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace492252770", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace492252770'><pre>java.lang.NullPointerException
-	at javax.imageio.ImageIO.write(Unknown Source)
-	at utils.Helper.takescreenshot(Helper.java:33)
-	at freamework.Framework1.teardown(Framework1.java:82)
+</pre></div><a href='#' onClick='toggleBox("stack-trace620456576", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace620456576'><pre>java.io.IOException: The filename, directory name, or volume label syntax is incorrect
+	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source)
+	at java.io.File.getCanonicalPath(Unknown Source)
+	at org.codehaus.plexus.util.FileUtils.copyFile(FileUtils.java:1007)
+	at utils.Helper.getScreenshot(Helper.java:31)
+	at freamework.Framework1.teardown(Framework1.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -230,13 +242,16 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>freamework.Framework1@1ce92674</td></tr>
+<td>freamework.Framework1@6fd02e5</td></tr>
 <tr>
 <td title='freamework.Framework1.tc3()'><b>tc3</b><br>Test class: freamework.Framework1<br>Test method: Itinerary page</td>
-<td><div><pre>java.lang.NullPointerException
-	at javax.imageio.ImageIO.write(Unknown Source)
-	at utils.Helper.takescreenshot(Helper.java:33)
-	at freamework.Framework1.teardown(Framework1.java:82)
+<td><div><pre>java.io.IOException: The filename, directory name, or volume label syntax is incorrect
+	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source)
+	at java.io.File.getCanonicalPath(Unknown Source)
+	at org.codehaus.plexus.util.FileUtils.copyFile(FileUtils.java:1007)
+	at utils.Helper.getScreenshot(Helper.java:31)
+	at freamework.Framework1.teardown(Framework1.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -264,11 +279,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace701166114", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace701166114'><pre>java.lang.NullPointerException
-	at javax.imageio.ImageIO.write(Unknown Source)
-	at utils.Helper.takescreenshot(Helper.java:33)
-	at freamework.Framework1.teardown(Framework1.java:82)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1220759559", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1220759559'><pre>java.io.IOException: The filename, directory name, or volume label syntax is incorrect
+	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source)
+	at java.io.File.getCanonicalPath(Unknown Source)
+	at org.codehaus.plexus.util.FileUtils.copyFile(FileUtils.java:1007)
+	at utils.Helper.getScreenshot(Helper.java:31)
+	at freamework.Framework1.teardown(Framework1.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -298,7 +316,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>freamework.Framework1@1ce92674</td></tr>
+<td>freamework.Framework1@6fd02e5</td></tr>
 </table><p>
 </body>
 </html>
