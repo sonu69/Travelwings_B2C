@@ -4,20 +4,16 @@ import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.time.LocalTime;
 import java.util.Date;
-
 import javax.imageio.ImageIO;
-
 import org.codehaus.plexus.util.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-
 import freamework.Framework1;
-//import ru.yandex.qatools.ashot.AShot;
-//import ru.yandex.qatools.ashot.Screenshot;
-//import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
 
 public class Helper extends Framework1{
@@ -29,29 +25,28 @@ public class Helper extends Framework1{
 		 
 	}
 
-	public static void getScreenshot(WebDriver driver) throws IOException {
+	public static String getScreenshot(WebDriver driver) throws IOException {
 		
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		String path = System.getProperty("user.dir")+"/Screenshots/sonu "+System.currentTimeMillis()+".png";
 		File destination = new File(path);
 		FileUtils.copyFile(src, destination);
-//		return path;
+		return path;
 		
 	}
 
+	public static String takescreenshot(WebDriver driver) throws Exception {		
+		String path = System.getProperty("user.dir")+"/Screenshots/sonu "+System.currentTimeMillis()+".png";
+		Screenshot fpScreenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
+		try {
+			ImageIO.write(fpScreenshot.getImage(),"PNG",new File(path));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	     return path;
+	}
 }
-//	public static String takescreenshot(WebDriver driver) throws Exception {		
-//		String path = System.getProperty("user.dir")+"/Screenshots/sonu "+System.currentTimeMillis()+".png";
-//		Screenshot fpScreenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
-//		try {
-//			ImageIO.write(fpScreenshot.getImage(),"PNG",new File(path));
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
-//	     return path;
-//	}
-//}
 
 
 //<plugin>
