@@ -1,4 +1,4 @@
-package freamework;
+package framework;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
@@ -36,7 +36,7 @@ public class Framework1 extends Baseclass{
 		driver = getDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://newuat.travelwings.com/");
+		driver.get("https://test.techtreeit.in/");
 		htmlReporter = new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Reports/sonu"+".html"));
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);

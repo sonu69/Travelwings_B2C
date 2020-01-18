@@ -1,4 +1,4 @@
-package freamework;
+package framework;
 
 import java.io.File;
 
